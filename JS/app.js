@@ -60,13 +60,13 @@ let myJournal = prompt('Do I keep a journal?');
 
 if (myJournal === 'no' || myJournal === 'n') {
   // console.log('Your right, I do not keep a journal.');
-  alert('Your right ' + username + ', I do play video games. Thanks for playing!');
+  alert('Your right ' + username + ', I do not keep a journal. Thanks for playing!');
 } else if (myJournal === 'yes' || myJournal === 'y') {
   // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
-  alert('It was a fifty fifty chance' + username + ', unfortunately you choose wrong. Thanks for playing! ');
+  alert('It was a fifty fifty chance ' + username + ', unfortunately you choose wrong. Thanks for playing! ');
 } else {
   // console.log('Please answer with "yes" or "no."');
   alert('Please answer with "yes" or "no."');
 }
 
-document.write('Thanks for coming to my page ' + username + '! This is a page where you can learn more about me. I hope you enjoy your stay.');
+document.write('Thanks for coming to my page ' + username + '! It was great interacting with you, I hope you enjoyed your stay.');
