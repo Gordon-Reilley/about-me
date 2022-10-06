@@ -35,17 +35,21 @@ function guessColor() {
 
 guessColor();
 
-let runAway = prompt('Have I ever ran away from home?');
-if (runAway === 'no' || runAway === 'n') {
-  // console.log('You\'re right, I have never ran away from home.');
-  alert('You\'re right, I have never ran away from home.');
-} else if (runAway === 'yes' || runAway === 'y') {
-  // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
-  alert('It was a fifty fifty chance, unfortunately you choose wrong.');
-} else {
-  // console.log('Please answer with "yes" or "no."');
-  alert('Please answer with "yes" or "no."');
+function guessRunAway() {
+  let runAway = prompt('Have I ever ran away from home?');
+  if (runAway === 'no' || runAway === 'n') {
+    // console.log('You\'re right, I have never ran away from home.');
+    alert('You\'re right, I have never ran away from home.');
+  } else if (runAway === 'yes' || runAway === 'y') {
+    // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
+    alert('It was a fifty fifty chance, unfortunately you choose wrong.');
+  } else {
+    // console.log('Please answer with "yes" or "no."');
+    alert('Please answer with "yes" or "no."');
+  }
 }
+
+guessRunAway();
 
 let videoGame = prompt('Do I play video games?');
 
