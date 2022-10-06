@@ -67,17 +67,21 @@ function guessGame() {
 
 guessGame();
 
-let myJournal = prompt('Do I keep a journal?');
-if (myJournal === 'no' || myJournal === 'n') {
-  // console.log('You\'re right, I do not keep a journal.');
-  alert('You\'re right ' + username + ', I do not keep a journal. Thanks for playing!');
-} else if (myJournal === 'yes' || myJournal === 'y') {
-  // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
-  alert('It was a fifty fifty chance ' + username + ', unfortunately you choose wrong. Thanks for playing! ');
-} else {
-  // console.log('Please answer with "yes" or "no."');
-  alert('Please answer with "yes" or "no."');
+function guessJournal() {
+  let myJournal = prompt('Do I keep a journal?');
+  if (myJournal === 'no' || myJournal === 'n') {
+    // console.log('You\'re right, I do not keep a journal.');
+    alert('You\'re right ' + username + ', I do not keep a journal. Thanks for playing!');
+  } else if (myJournal === 'yes' || myJournal === 'y') {
+    // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
+    alert('It was a fifty fifty chance ' + username + ', unfortunately you choose wrong. Thanks for playing! ');
+  } else {
+    // console.log('Please answer with "yes" or "no."');
+    alert('Please answer with "yes" or "no."');
+  }
 }
+
+guessJournal();
 
 // question 6
 
