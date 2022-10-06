@@ -85,34 +85,38 @@ guessJournal();
 
 // question 6
 
-let favNumQuestion = 'Can you guess my favorite number between 1-10? I\'ll give you 4 chances!';
+function guessNumber() {
+  let favNumQuestion = 'Can you guess my favorite number between 1-10? I\'ll give you 4 chances!';
 
-const favNum = 8;
+  const favNum = 8;
 
-let attempts = 4;
+  let attempts = 4;
 
-let userAttempts = null;
+  let userAttempts = null;
 
-while (favNum !== userAttempts) {
-  if (!attempts) {
-    alert('you have ran out of chances the correct answer was 8.');
-    break;
-  }
-  // console.log(favNumQuestion);
-  userAttempts = parseInt(prompt(favNumQuestion));
-  // console.log(userAttempts);
-  attempts-=1;
-  // console.log(favNum); console.log(favNumQuestion);
-  if (userAttempts === favNum) {
-    alert(`Dang ${username} you must be a mind reader because you guessed right!`);
-    attempts = 0;
-  } if (userAttempts < favNum) {
-    alert(`Not quite you're a bit low, you have ${attempts} remaining`);
-    // favNumQuestion = prompt('Can you guess my favorite number between 1-10? I\'ll give you 4 chances!');
-  } if (userAttempts > favNum) {
-    alert(`Not quite you're a bit high, you have ${attempts} remaining`); 
-    // favNumQuestion = prompt('Can you guess my favorite number between 1-10? I\'ll give you 4 chances!');
+  while (favNum !== userAttempts) {
+    if (!attempts) {
+      alert('you have ran out of chances the correct answer was 8.');
+      break;
+    }
+    // console.log(favNumQuestion);
+    userAttempts = parseInt(prompt(favNumQuestion));
+    // console.log(userAttempts);
+    attempts-=1;
+    // console.log(favNum); console.log(favNumQuestion);
+    if (userAttempts === favNum) {
+      alert(`Dang ${username} you must be a mind reader because you guessed right!`);
+      attempts = 0;
+    } if (userAttempts < favNum) {
+      alert(`Not quite you're a bit low, you have ${attempts} remaining`);
+      // favNumQuestion = prompt('Can you guess my favorite number between 1-10? I\'ll give you 4 chances!');
+    } if (userAttempts > favNum) {
+      alert(`Not quite you're a bit high, you have ${attempts} remaining`); 
+      // favNumQuestion = prompt('Can you guess my favorite number between 1-10? I\'ll give you 4 chances!');
+    }
   }
 }
+
+guessNumber();
 
 // question 7
