@@ -69,6 +69,8 @@ if (myJournal === 'no' || myJournal === 'n') {
   alert('Please answer with "yes" or "no."');
 }
 
+// question 6
+
 let favNumQuestion = 'Can you guess my favorite number between 1-10? I\'ll give you 4 chances!';
 
 const favNum = 8;
@@ -76,10 +78,6 @@ const favNum = 8;
 let attempts = 4;
 
 let userAttempts = null;
-
-// alert(`Not quite you have ${attempts - i - 1} remaining`);
-
-// for (let i = 0; i < attempts; i++)
 
 while (favNum !== userAttempts) {
   if (!attempts) {
@@ -102,4 +100,6 @@ while (favNum !== userAttempts) {
     // favNumQuestion = prompt('Can you guess my favorite number between 1-10? I\'ll give you 4 chances!');
   }
 }
+
+// question 7
 
