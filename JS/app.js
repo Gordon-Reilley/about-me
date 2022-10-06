@@ -3,22 +3,24 @@
 let username = prompt('Hello there, what\'s your name?');
 console.log(username);
 
-let myAge = prompt('Hi ' + username + ', am I 26 year old?').toLowerCase();
-
-
-if (myAge === 'yes' || myAge === 'y') {
-  // console.log('You\'re right, I am 26 years old');
-  alert('You\'re right, I am 26 years old');
-} else if (myAge === 'no' || myAge === 'n') {
-  // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
-  alert('It was a fifty fifty chance, unfortunately you choose wrong.');
-} else {
-  // console.log('Please answer with "yes" or "no."');
-  alert('Please answer with "yes" or "no."');
+function guessAge() {
+  let myAge = prompt('Hi ' + username + ', am I 26 year old?').toLowerCase();
+  if (myAge === 'yes' || myAge === 'y') {
+    // console.log('You\'re right, I am 26 years old');
+    alert('You\'re right, I am 26 years old');
+  } else if (myAge === 'no' || myAge === 'n') {
+    // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
+    alert('It was a fifty fifty chance, unfortunately you choose wrong.');
+  } else {
+    // console.log('Please answer with "yes" or "no."');
+    alert('Please answer with "yes" or "no."');
+  }
 }
 
-let favColor = prompt('Is my favorite color purple?');
+guessAge();
 
+
+let favColor = prompt('Is my favorite color purple?');
 if (favColor === 'yes' || favColor === 'y') {
   // console.log('You\'re right, my favorite color is purple.');
   alert('You\'re right, my favorite color is purple.');
@@ -29,6 +31,8 @@ if (favColor === 'yes' || favColor === 'y') {
   // console.log('Please answer with "yes" or "no."');
   alert('Please answer with "yes" or "no."');
 }
+
+
 
 let runAway = prompt('Have I ever ran away from home?');
 
@@ -102,4 +106,3 @@ while (favNum !== userAttempts) {
 }
 
 // question 7
-
