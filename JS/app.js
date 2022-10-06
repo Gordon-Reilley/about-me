@@ -19,23 +19,23 @@ function guessAge() {
 
 guessAge();
 
-
-let favColor = prompt('Is my favorite color purple?');
-if (favColor === 'yes' || favColor === 'y') {
-  // console.log('You\'re right, my favorite color is purple.');
-  alert('You\'re right, my favorite color is purple.');
-} else if (favColor === 'no' || favColor === 'n') {
-  // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
-  alert('It was a fifty fifty chance, unfortunately you choose wrong.');
-} else {
-  // console.log('Please answer with "yes" or "no."');
-  alert('Please answer with "yes" or "no."');
+function guessColor() {
+  let favColor = prompt('Is my favorite color purple?');
+  if (favColor === 'yes' || favColor === 'y') {
+    // console.log('You\'re right, my favorite color is purple.');
+    alert('You\'re right, my favorite color is purple.');
+  } else if (favColor === 'no' || favColor === 'n') {
+    // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
+    alert('It was a fifty fifty chance, unfortunately you choose wrong.');
+  } else {
+    // console.log('Please answer with "yes" or "no."');
+    alert('Please answer with "yes" or "no."');
+  }
 }
 
-
+guessColor();
 
 let runAway = prompt('Have I ever ran away from home?');
-
 if (runAway === 'no' || runAway === 'n') {
   // console.log('You\'re right, I have never ran away from home.');
   alert('You\'re right, I have never ran away from home.');
