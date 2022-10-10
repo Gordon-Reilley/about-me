@@ -8,14 +8,11 @@ let counter = 0;
 function guessAge() {
   let myAge = prompt('Hi ' + username + ', am I 26 year old?').toLowerCase();
   if (myAge === 'yes' || myAge === 'y') {
-    // console.log('You\'re right, I am 26 years old');
     alert('You\'re right, I am 26 years old');
     counter++;
   } else if (myAge === 'no' || myAge === 'n') {
-    // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
     alert('It was a fifty fifty chance, unfortunately you choose wrong.');
   } else {
-    // console.log('Please answer with "yes" or "no."');
     alert('Please answer with "yes" or "no."');
   }
 }
@@ -25,14 +22,11 @@ guessAge();
 function guessColor() {
   let favColor = prompt('Is my favorite color purple?');
   if (favColor === 'yes' || favColor === 'y') {
-    // console.log('You\'re right, my favorite color is purple.');
     alert('You\'re right, my favorite color is purple.');
     counter++;
   } else if (favColor === 'no' || favColor === 'n') {
-    // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
     alert('It was a fifty fifty chance, unfortunately you choose wrong.');
   } else {
-    // console.log('Please answer with "yes" or "no."');
     alert('Please answer with "yes" or "no."');
   }
 }
@@ -42,14 +36,11 @@ guessColor();
 function guessRunAway() {
   let runAway = prompt('Have I ever ran away from home?');
   if (runAway === 'no' || runAway === 'n') {
-    // console.log('You\'re right, I have never ran away from home.');
     alert('You\'re right, I have never ran away from home.');
     counter++;
   } else if (runAway === 'yes' || runAway === 'y') {
-    // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
     alert('It was a fifty fifty chance, unfortunately you choose wrong.');
   } else {
-    // console.log('Please answer with "yes" or "no."');
     alert('Please answer with "yes" or "no."');
   }
 }
@@ -59,14 +50,11 @@ guessRunAway();
 function guessGame() {
   let videoGame = prompt('Do I play video games?');
   if (videoGame === 'yes' || videoGame === 'y') {
-    // console.log('You\'re right, I do play video games.');
     alert('You\'re right, I do play video games.');
     counter++;
   } else if (videoGame === 'no' || videoGame === 'n') {
-    // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
     alert('It was a fifty fifty chance, unfortunately you choose wrong.');
   } else {
-    // console.log('Please answer with "yes" or "no."');
     alert('Please answer with "yes" or "no."');
   }
 }
@@ -76,21 +64,16 @@ guessGame();
 function guessJournal() {
   let myJournal = prompt('Do I keep a journal?');
   if (myJournal === 'no' || myJournal === 'n') {
-    // console.log('You\'re right, I do not keep a journal.');
     alert('You\'re right ' + username + ', I do not keep a journal.');
     counter++;
   } else if (myJournal === 'yes' || myJournal === 'y') {
-    // console.log('It was a fifty fifty chance, unfortunately you choose wrong.');
     alert('It was a fifty fifty chance ' + username + ', unfortunately you choose wrong.');
   } else {
-    // console.log('Please answer with "yes" or "no."');
     alert('Please answer with "yes" or "no."');
   }
 }
 
 guessJournal();
-
-// question 6
 
 function guessNumber() {
   let favNumQuestion = 'Can you guess my favorite number between 1-10? I\'ll give you 4 chances!';
@@ -106,28 +89,21 @@ function guessNumber() {
       alert('you have ran out of chances the correct answer was 8.');
       break;
     }
-    // console.log(favNumQuestion);
     userAttempts = parseInt(prompt(favNumQuestion));
-    // console.log(userAttempts);
     attempts-=1;
-    // console.log(favNum); console.log(favNumQuestion);
     if (userAttempts === favNum) {
       alert(`Dang ${username} you must be a mind reader because you guessed right!`);
       attempts = 0;
       counter++;
     } if (userAttempts < favNum) {
       alert(`Not quite you're a bit low, you have ${attempts} remaining`);
-      // favNumQuestion = prompt('Can you guess my favorite number between 1-10? I\'ll give you 4 chances!');
     } if (userAttempts > favNum) {
-      alert(`Not quite you're a bit high, you have ${attempts} remaining`); 
-      // favNumQuestion = prompt('Can you guess my favorite number between 1-10? I\'ll give you 4 chances!');
+      alert(`Not quite you're a bit high, you have ${attempts} remaining`);
     }
   }
 }
 
 guessNumber();
-
-// question 7
 
 function guessSport() {
   let favSport = ['wrestling','football','mountain biking','surfing','skateboarding','snowboarding','basketball','disc golf','lacrosse','soccer'];
